@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    background-color: #f4f4f4;
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+    color: #000
+}
+
+a {
+    display: inline-block;
+    color: #282830;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+.about {
+    position: relative;
+    height: 100vh;
+    background: url(../img/bg.jpg);
+    background-size: cover;
+    background-position: 0 0;
+    z-index: 1
+}
+
+.about:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(90deg, rgba(220, 22, 126, 0.9), rgba(28, 149, 220, 0.9), rgba(220, 22, 126, 0.9), rgba(239, 153, 47, 0.9), rgba(28, 149, 220, 0.9));
+    background-size: 1000% 1000%;
+    animation: GradientiFy 40s ease infinite
+}
+
+.about .container {
+    position: relative;
+    text-align: center;
+    flex-direction: column;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .container h1 {
+    text-align: center;
+    margin: 0 0 10px;
+    font-family: Comfortaa, cursive, 'Raleway', sans-serif;
+    font-size: 44px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    color: #ffffff;
+}
+
+.about .container h2 {
+    text-align: center;
+    margin: 0 0 10px;
+    font-family: Comfortaa, cursive, 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    color: #ffffff;
+}
+
+.social-widget-header {
+    margin-top: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: none;
+    border-left: none;
+    padding: 15px 0;
+    z-index: 8
+}
+
+.social-widget-header a {
+    color: #fff;
+    padding: 8px 12px;
+    font-size: 18px
+}
+
+@keyframes GradientiFy {
+    0% {
+        background-position: 0 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0 50%
+    }
+}
+
+
+@media (min-width: 768px) {
+    .about .container h1 {
+        font-size: 54px;
+    }
+
+    .about .container h2 {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .about .container h1 {
+        font-size: 72px;
+    }
+
+    .about .container h2 {
+        font-size: 32px;
+    }
+}
