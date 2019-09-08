@@ -1,0 +1,166 @@
+/* - - - - - - - - - - - - - - - -
+
+    #INTRO
+
+- - - - - - - - - - - - - - - - - */
+
+
+.intro {
+    position: relative;
+    font-family: 'Roboto';
+    color: #fff;
+    background-image: url('../../img/intro-bg-3.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.intro::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #300030;
+    opacity: 0.75;
+}
+
+.intro__slogan-area {
+    position: relative;
+    top: 180px;
+    z-index: 2;
+}
+
+.intro__slogan-text--primary {
+    margin: 0 0 20px 0;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+}
+
+.intro__slogan-text--secondary {
+    margin: 0 0 20px 0;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #ed322d;
+}
+
+.intro__slogan-text-details {
+    width: 100%;
+    margin: 3.5rem auto 0 auto;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    color: #a8a8a8;
+}
+
+.intro__scroll-indicator {
+    position: absolute;
+    top: calc(100vh - 100px);
+    left: 50%;
+    transform: translate(-50%, -100%);
+    width: 24px;
+    height: 51px;
+    border-radius: 10px;
+    border: solid 2px #ffffff;
+    z-index: 2;
+}
+
+.intro__scroll-indicator::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 11px;
+    background-color: #ffffff;
+    top: 5px;
+    left: 9px;
+    animation-name: mouse;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15, .41, .69, .94);
+    animation-iteration-count: infinite;
+}
+
+.intro__scroll-text {
+    position: absolute;
+    top: calc(100vh - 100px);
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 2;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    color: #a8a8a8;
+}
+
+@keyframes mouse {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(15px);
+        opacity: 0;
+    }
+}
+
+/* For Portrait Tablets */
+@media (min-width: 600px) {
+    .intro__slogan-area {
+        top: 200px;
+    }
+
+    .intro__slogan-text--primary, .intro__slogan-text--secondary {
+        font-size: 72px;
+    }
+
+}
+
+/* For Desktop and Landscape Tablets */
+@media (min-width: 768px) {
+    .intro {
+        background-image: url('../../img/intro-bg-1.jpg');
+    }
+
+    .intro__slogan-area {
+        top: 200px;
+    }
+
+    .intro__slogan-text-details {
+        width: 470px;
+        margin-top: 3rem;
+    }
+}
+
+/** Landscape Mobile Phones **/
+@media (max-width: 767px) and (orientation: landscape) {
+    .intro__slogan-area {
+        top: 100px;
+    }
+
+    .intro__slogan-text--primary, .intro__slogan-text--secondary {
+        font-size: 36px;
+        margin-bottom: 0;
+    }
+
+    .intro__slogan-text-details {
+        margin: 2.5rem auto 0 auto;
+    }
+
+    .intro__scroll-indicator {
+        top: calc(100vh - 30px);
+    }
+
+    .intro__scroll-text {
+        top: calc(100vh - 40px);
+    }
+}

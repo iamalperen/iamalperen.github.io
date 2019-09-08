@@ -1,0 +1,163 @@
+/* - - - - - - - - - - - - - - - -
+
+    #SERVICES AND TERMS
+
+- - - - - - - - - - - - - - - - - */
+
+.services-and-terms {
+    position: relative;
+    font-family: 'Roboto';
+    color: #fff;
+    background-color: #191919;
+    background-image: url('../../img/services-and-terms-bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 0;
+    box-sizing: border-box;
+}
+
+.services-and-terms__title {
+    font-size: 36px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.97;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    margin: 50px auto 0 auto;
+    padding: 0;
+}
+
+.services-and-terms__title span {
+    color: #ed322d;
+}
+
+
+.services-and-terms__title::after {
+    content: '';
+    display: block;
+    margin: 20px auto;
+    width: 36px;
+    height: 2px;
+    background-color: #bebebe;
+}
+
+.services-and-terms__explanation {
+    max-width: 1000px;
+    font-size: 20px;
+    font-weight: 100;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    margin: 0 auto;
+}
+
+.services-and-terms__details {
+    margin: 20px 0;
+}
+
+.services-and-terms__detail {
+    display: flex;
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.services-and-terms__detail-step {
+    display: flex;
+    height: 150px;
+    flex: 1;
+}
+
+.services-and-terms__indicator {
+    flex: 1;
+    position: relative;
+    background-color: #9a417c;
+}
+
+
+.services-and-terms__indicator.second {
+    background-color: #682852;
+}
+
+.services-and-terms__indicator.third {
+    background-color: #601848;
+}
+
+.services-and-terms__indicator-arrow {
+    position: absolute;
+    top: 45%;
+    right: 40%;
+}
+
+.services-and-terms__step-explanation {
+    flex: 3;
+    background-color: #7a225d;
+    padding: 10px;
+}
+
+.services-and-terms__step-explanation.second {
+    background-color: #480048;
+}
+
+.services-and-terms__step-explanation.third {
+    background-color: #300030;
+}
+
+.services-and-terms__step-detail-title {
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    text-align: left;
+    color: #eaafd6;
+    margin-top: 25px;
+}
+
+.services-and-terms__step-detail-text {
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+    text-align: left;
+    color: #c39fb7;
+}
+
+/* For Portrait Tablets */
+@media (min-width: 600px) {
+
+}
+
+/* For Desktop and Landscape Tablets */
+@media (min-width: 768px) {
+
+    .services-and-terms__title {
+        font-size: 54px;
+        margin: 100px auto 0 auto;
+    }
+
+    .services-and-terms__detail {
+        flex-direction: row;
+    }
+
+    .services-and-terms__detail {
+        width: calc(100% - 100px);
+    }
+
+}
+
+/** Landscape Mobile Phones **/
+@media (max-width: 767px) and (orientation: landscape) {
+
+}

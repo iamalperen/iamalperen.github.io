@@ -1,0 +1,132 @@
+/* - - - - - - - - - - - - - - - -
+
+    #DETAILS
+
+- - - - - - - - - - - - - - - - - */
+
+.details {
+    display: flex;
+    background-color: #f8f8f8;
+    flex-direction: column;
+    font-family: 'Roboto';
+}
+
+.details__chart, .details__explanation {
+    width: 100%;
+    flex: 1;
+}
+
+.details__chart-img {
+    width: 100%;
+    height: auto;
+}
+
+.details__explanation-title {
+    position: relative;
+    font-size: 36px;
+    font-weight: bold;
+    color: #404040;
+    margin: 10px 10px 10px 20px;
+    padding: 0;
+    text-align: left;
+}
+
+.details__explanation-title span {
+    color: #ed322d;
+}
+
+.details__explanation-title::after {
+    content: '';
+    display: block;
+    margin: 10px 0 0 5px;
+    width: 36px;
+    height: 2px;
+    background-color: #bebebe;
+}
+
+.details__explanation-text {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: left;
+    color: #5d5d5d;
+    padding: 0 20px 20px 20px;
+    line-height: 1.82;
+}
+
+.details__explanation-text::after {
+    content: '';
+    display: block;
+    margin-top: 30px;
+    height: 1px;
+    background-color: #d7d7d7;
+}
+
+.details__explanation-bottom {
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+}
+
+
+.details__explanation-bottom-img-box {
+    height: 100px;
+    flex: 2;
+}
+
+.details__explanation-bottom-img {
+    height: 100%;
+    width: 100%;
+}
+
+.details__explanation-bottom-text {
+    height: 48px;
+    margin-left: 24px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.4;
+    text-align: left;
+    color: #5d5d5d;
+    flex: 3;
+}
+
+
+/* For Portrait Tablets */
+@media (min-width: 600px) {
+    .details__explanation-bottom-text {
+        line-height: 1.82;
+    }
+
+    .details__explanation-bottom-img-box {
+        flex: 1;
+    }
+}
+
+/* For Desktop */
+@media (min-width: 1200px) {
+    .details {
+        flex-direction: row;
+    }
+
+    .details__chart, .details__explanation {
+        width: 50%;
+    }
+
+    .details__explanation-title {
+        font-size: 54px;
+        margin: 30px 0 0 20px;
+    }
+
+    .details__explanation-bottom-text {
+        line-height: 1.82;
+    }
+
+    .details__explanation-bottom-img-box {
+        flex: 1;
+    }
+}
+
+/** Landscape Mobile Phones **/
+@media (max-width: 767px) and (orientation: landscape) {
+
+}

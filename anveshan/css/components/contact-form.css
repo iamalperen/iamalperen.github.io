@@ -1,0 +1,128 @@
+/* - - - - - - - - - - - - - - - -
+
+    #CONTACT FORM
+
+- - - - - - - - - - - - - - - - - */
+
+
+.contact-form {
+    position: relative;
+    font-family: 'Roboto';
+    color: #fff;
+    background-color: #191919;
+    background-image: url('../../img/contact-bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 0;
+    box-sizing: border-box;
+}
+
+.contact-form__logo {
+    text-align: center;
+    margin-top: -25%;
+}
+
+.contact-form__title {
+    position: relative;
+    font-size: 54px;
+    text-align: center;
+    margin: 0;
+    color: #404040;
+    font-weight: 700;
+}
+
+.contact-form__title span {
+    color: #ffffff;
+}
+
+
+.contact-form__title::after {
+    content: '';
+    display: block;
+    margin: 20px auto;
+    width: 36px;
+    height: 2px;
+    background-color: #404040;
+}
+
+.contact-form__explanation {
+    max-width: 540px;
+    font-size: 20px;
+    font-weight: 100;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: normal;
+    text-align: center;
+    color: #404040;
+    margin: 0 auto;
+}
+
+.contact-form__form-area {
+    max-width: 944px;
+    height: 626px;
+    margin: 10px;
+    border: solid 1px #dfdfdf;
+    background-color: #ffffff;
+}
+
+.contact-form__form {
+    max-width: 420px;
+    margin: 50px auto;
+}
+
+.contact-form__form-item {
+    margin: 20px;
+    text-align: center;
+}
+
+.contact-form__form-item input, .contact-form__form-item textarea {
+    width: 100%;
+    height: 60px;
+    border: 0;
+    border-bottom: solid 1px #dfdfdf;
+    color: #8E8E8E;
+}
+
+
+.contact-form__form-item textarea {
+    resize: vertical;
+    max-height: 200px;
+}
+
+.contact-form__form-item:last-of-type {
+    margin-top: 40px;
+}
+
+.contact-form__form-item:last-of-type input {
+    background: none;
+    border: solid 2px #878787;
+}
+
+
+/* For Portrait Tablets */
+@media (min-width: 600px) {
+
+}
+
+/* For Desktop and Landscape Tablets */
+@media (min-width: 768px) {
+
+    .contact-form__logo {
+        text-align: center;
+        margin-top: -10%;
+    }
+
+    .contact-form__form-area {
+        margin: 20px auto;
+    }
+
+}
+
+/** Landscape Mobile Phones **/
+@media (max-width: 767px) and (orientation: landscape) {
+
+}

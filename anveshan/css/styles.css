@@ -1,0 +1,29 @@
+/* styles.css v1.0.0 | MIT License | github.com/iamalperen | Alperen Talaslıoğlu */
+/**
+ * TABLE OF CONTENTS
+ *
+ *
+ * GENERICS
+ * normalize.css .....................Normalize user agent's styles
+ * defaults.css.......................Generic classes to use everywhere
+ *
+ * COMPONENTS
+ * header.css.........................Header of page
+ * intro.css..........................Introduction of page and slogans section
+ * details.css........................Some details about the page
+ * process.css........................Step by step process explanations
+ * services-and-terms.css.............Detailed explanation of services and terms
+ * contact-form.css...................Contact / Communication form
+ * footer.css.........................Footer of page
+ *
+ *
+ */
+@import "normalize.css";
+@import "defaults.css";
+@import 'components/header.css';
+@import 'components/intro.css';
+@import 'components/details.css';
+@import 'components/process.css';
+@import 'components/services-and-terms.css';
+@import 'components/contact-form.css';
+@import 'components/footer.css';
