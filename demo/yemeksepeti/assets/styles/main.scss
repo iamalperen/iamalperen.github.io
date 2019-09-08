@@ -1,0 +1,30 @@
+/**
+ * TABLE OF CONTENTS
+ *
+ *
+ * TOOLS
+ * _mixins.scss ...............Useful mixins.
+ *
+ * GENERIC
+ * _normalize.scss ........Normalize everything instead of resetting
+ * _generics.scss.........Generic classes to use everywhere
+ *
+ * BASE
+ * _colors.scss.............Color palette
+ * _typography.scss..........Fonts used in application
+ * _metrics.scss............Some metrics to determine sizes
+ *
+ * VENDORS
+ * font-awesome.scss............. Font-awesome icon library
+ *
+ *
+ *
+ */
+
+@import 'abstracts/_mixins';
+@import 'abstracts/_normalize';
+@import "base/_colors";
+@import "base/_fonts";
+@import "base/_generics";
+@import "base/_metrics";
+@import "vendors/font-awesome";

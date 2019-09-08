@@ -1,0 +1,22 @@
+/* - - - - - - - - - - - - - - - -
+
+      #GENERIC-CLASSES
+
+- - - - - - - - - - - - - - - - - */
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.main {
+  text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
